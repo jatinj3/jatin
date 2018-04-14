@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>OnlineExam</title>
+    <link href="Demo.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="maindiv">
+    <div id="header" >
+    <div class="h">
+        <p><asp:Image ID="Image1"  Height="100px" runat="server" ImageUrl="~/img/spellcheck.png" />
+        <h1 style="float:left; top: 38px; left: 432px; position: absolute; height: 63px; width: 340px; text-align: center;color:Lime;text-decoration:blink;">Online Examination</h1></p>
+    </div>
+    <div class="h" style="float:right;height:110px;">
+     <table>
+                    <tr>
+                        <td>
+                            
+                           <h3 style="color:Lime;"> Email Address</h3>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="TextBox1" runat="server" Width="170px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                           <h3 style="color:Lime;">Password</h3>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <asp:TextBox ID="TextBox2" runat="server" TextMode="Password" Width="170px" CausesValidation="false"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <asp:Button ID="Button1" runat="server" Text="Log-In" onclick="Button1_Click" 
+                                CausesValidation="False" />
+                            <asp:Button ID="Button2" runat="server" Text="Register Here" 
+                                OnClick="Button2_Click" CausesValidation="False" />
+                            <asp:Label ID="Label1" runat="server" BackColor="Lime"></asp:Label>
+                        </td>
+                    </tr>
+                    </table>
+    </div>
+    <div class="h" style="float:right;">
+        <asp:Image ID="Image2" runat="server" style="margin-top:30px;" ImageUrl="~/img/facebook_32.png" />
+        <asp:Image ID="Image3" runat="server" style="margin-top:30px;" ImageUrl="~/img/linkedin-32.png" />
+        <asp:Image ID="Image4" runat="server"  style="margin-top:30px;" ImageUrl="~/img/twitter_32.png"/>
+
+   
+                    </div>
+    <div id="mnu">
+    <ul>
+    <li><a href="Index.aspx">Home</a></li>
+    <li><a href="Exams.aspx">Exams</a></li>
+    <li><a href="ContactUs.aspx">Contact Us</a></li>
+    <li><a href="AboutUs.aspx">About Us</a></li>
+    </ul>
+    </div>
+    </div>
+    <div id="content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="footer" >
+    <h3 style="text-align:center;">© OnlineExamination 2014. All Rights Reserved.</h3>
+    </div>
+    </div>
+    </form>
+</body>
+</html>

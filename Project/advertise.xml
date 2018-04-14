@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+  <Ad>
+    <ImageUrl>~/img/online_exams.jpg</ImageUrl>
+    
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/images(1).jpg</ImageUrl>
+    
+  </Ad>
+  <Ad>
+    <ImageUrl>~/img/images(2).jpg</ImageUrl>
+    
+  </Ad>
+  
+  
+  
+</Advertisements>
